@@ -1,0 +1,147 @@
+/* ===== CONTENEDOR GENERAL ===== */
+.anti-container {
+  width: 100%;
+  padding: 80px 25px;
+  background: linear-gradient(135deg, #ffffff 0%, #eaf3ff 100%);
+  min-height: 100vh;
+  animation: fadeIn 1.2s ease;
+}
+
+/* ===== HEADER ===== */
+.anti-header {
+  text-align: center;
+  margin-bottom: 60px;
+  animation: slideDown 1s ease;
+}
+
+.anti-header-icon {
+  width: 65px;
+  height: 65px;
+  color: #0056c7;
+  margin-bottom: 15px;
+  filter: drop-shadow(0 4px 8px rgba(0, 86, 199, 0.25));
+}
+
+.anti-header h1 {
+  font-size: 2.8rem;
+  color: #003a75;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.anti-header p {
+  color: #003b75cc;
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* ===== SECCIONES ===== */
+.anti-sections {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 30px;
+}
+
+/* ===== TARJETAS ===== */
+.anti-card {
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(0, 86, 199, 0.22);
+  backdrop-filter: blur(14px);
+  padding: 35px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 28px rgba(0, 74, 148, 0.18);
+  transition: transform 0.45s ease, box-shadow 0.45s ease, border 0.45s ease;
+  animation: fadeUp 0.9s ease;
+  cursor: pointer;
+}
+
+.anti-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 18px 45px rgba(0, 86, 199, 0.28);
+  border: 1px solid rgba(0, 86, 199, 0.45);
+}
+
+.anti-icon-box {
+  width: 68px;
+  height: 68px;
+  border-radius: 18px;
+  background: rgba(0, 86, 199, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+  transition: background 0.3s ease;
+}
+
+.anti-card:hover .anti-icon-box {
+  background: rgba(0, 86, 199, 0.18);
+}
+
+.anti-icon {
+  width: 36px;
+  height: 36px;
+  color: #0056c7;
+}
+
+.anti-card h2 {
+  font-size: 1.6rem;
+  color: #003a75;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.anti-card p {
+  font-size: 1.1rem;
+  color: #003b75cc;
+  line-height: 1.55;
+}
+
+/* ===== ANIMACIONES ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-15px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    transform: translateY(22px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+  .anti-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .anti-card {
+    padding: 28px 22px;
+  }
+
+  .anti-card h2 {
+    font-size: 1.4rem;
+  }
+}

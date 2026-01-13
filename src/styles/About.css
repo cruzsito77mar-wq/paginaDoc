@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+
+:root {
+  --bg: #f0f4f8;
+  --primary: #0a2540;
+  --secondary: #2dac80;
+  --text: #1c2a38;
+  --subtext: #5a6a78;
+  --card-bg: #ffffff;
+  --accent: #a6d8f0;
+}
+
+/* ---------------- WRAPPER ---------------- */
+.about-wrapper {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  padding-bottom: 80px;
+}
+
+/* ---------------- HERO ---------------- */
+.hero {
+  background: linear-gradient(
+    135deg,
+    var(--primary),
+    #0f3a66
+  );
+  padding: 90px 20px;
+  text-align: center;
+  color: white;
+}
+
+.hero-logo {
+  width: 140px;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 0 10px rgba(0,0,0,0.3));
+}
+
+.hero-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.hero-text {
+  font-size: 1.2rem;
+  opacity: 0.85;
+}
+
+/* ---------------- ABOUT SECTION ---------------- */
+.about-section {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.section-description {
+  max-width: 850px;
+  margin: 0 auto 40px;
+  font-size: 1.1rem;
+  color: var(--subtext);
+  text-align: center;
+}
+
+.about-icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.icon-card {
+  background: var(--card-bg);
+  padding: 25px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.icon-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.icon {
+  width: 42px;
+  height: 42px;
+  color: var(--secondary);
+  margin-bottom: 15px;
+}
+
+/* ---------------- FOCUS SECTION ---------------- */
+.focus-section {
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 60px auto;
+}
+
+.focus-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.focus-card {
+  background: var(--card-bg);
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.focus-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.focus-icon {
+  width: 42px;
+  height: 42px;
+  color: var(--primary);
+  margin-bottom: 15px;
+}
+
+/* ---------------- MVV SECTION ---------------- */
+.mvv-section {
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 80px auto;
+}
+
+.mvv-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.mvv-card {
+  background: var(--card-bg);
+  padding: 25px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.mvv-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.mvv-icon {
+  color: var(--secondary);
+  width: 42px;
+  height: 42px;
+  margin-bottom: 15px;
+}
+
+.mvv-card ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 12px;
+}
+
+.mvv-card ul li {
+  color: var(--subtext);
+  margin-bottom: 6px;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+@media (max-width: 900px) {
+  .hero-title { font-size: 2.2rem; }
+}
