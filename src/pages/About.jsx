@@ -65,7 +65,6 @@ export default function About() {
         <h2 className="section-title">Nuestro Enfoque</h2>
 
         <div className="focus-grid">
-
           <div className="focus-card">
             <FlaskConical className="icon focus-icon" />
             <h3>Metodología Científica</h3>
@@ -99,7 +98,6 @@ export default function About() {
               Trabajo profesional con honestidad, confidencialidad y respeto.
             </p>
           </div>
-
         </div>
       </section>
 
@@ -108,7 +106,6 @@ export default function About() {
         <h2 className="section-title">Nuestra Filosofía</h2>
 
         <div className="mvv-grid">
-
           <div className="mvv-card">
             <Target className="icon mvv-icon" />
             <h3>Misión</h3>
@@ -138,7 +135,6 @@ export default function About() {
               <li>Confidencialidad</li>
             </ul>
           </div>
-
         </div>
       </section>
 

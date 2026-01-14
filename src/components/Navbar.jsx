@@ -17,7 +17,6 @@ export default function Navbar() {
     <header className="navbar-pro-dark-blue">
       <div className="nav-container">
 
-        {/* LOGO + TEXTO */}
         <Link to="/" className="logo-full">
           <div className="logo-wrapper">
             <img src={Logo} alt="Alpha & Omega Logo" className="logo-img" />
@@ -29,7 +28,6 @@ export default function Navbar() {
           </div>
         </Link>
 
-        {/* NAV ICONS */}
         <nav className="nav-items">
           <Link to="/" className="nav-icon-item">
             <Home className="nav-icon" />
@@ -56,12 +54,14 @@ export default function Navbar() {
             <span className="nav-text">FAQ</span>
           </Link>
 
-          <Link to="/analisis" className="nav-icon-item">
+          {/* 🔥 RESALTADO */}
+          <Link to="/analisis" className="nav-icon-item nav-highlight">
             <FlaskRound className="nav-icon" />
             <span className="nav-text">Análisis</span>
           </Link>
 
-          <Link to="/antiplagio" className="nav-icon-item">
+          {/* 🔥 RESALTADO */}
+          <Link to="/antiplagio" className="nav-icon-item nav-highlight">
             <ShieldCheck className="nav-icon" />
             <span className="nav-text">Antiplagio</span>
           </Link>
@@ -71,3 +71,4 @@ export default function Navbar() {
     </header>
   );
 }
+

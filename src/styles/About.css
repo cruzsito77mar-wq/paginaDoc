@@ -20,11 +20,7 @@
 
 /* ---------------- HERO ---------------- */
 .hero {
-  background: linear-gradient(
-    135deg,
-    var(--primary),
-    #0f3a66
-  );
+  background: linear-gradient(135deg, var(--primary), #0f3a66);
   padding: 90px 20px;
   text-align: center;
   color: white;
@@ -48,7 +44,9 @@
 }
 
 /* ---------------- ABOUT SECTION ---------------- */
-.about-section {
+.about-section,
+.focus-section,
+.mvv-section {
   max-width: 1200px;
   margin: 80px auto;
   padding: 0 20px;
@@ -70,75 +68,9 @@
   text-align: center;
 }
 
-.about-icons {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 25px;
-  margin-top: 40px;
-}
-
-.icon-card {
-  background: var(--card-bg);
-  padding: 25px;
-  border-radius: 14px;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  transition: 0.3s ease;
-}
-
-.icon-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
-}
-
-.icon {
-  width: 42px;
-  height: 42px;
-  color: var(--secondary);
-  margin-bottom: 15px;
-}
-
-/* ---------------- FOCUS SECTION ---------------- */
-.focus-section {
-  max-width: 1200px;
-  padding: 0 20px;
-  margin: 60px auto;
-}
-
-.focus-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 25px;
-  margin-top: 40px;
-}
-
-.focus-card {
-  background: var(--card-bg);
-  padding: 25px;
-  border-radius: 14px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  transition: 0.3s ease;
-}
-
-.focus-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
-}
-
-.focus-icon {
-  width: 42px;
-  height: 42px;
-  color: var(--primary);
-  margin-bottom: 15px;
-}
-
-/* ---------------- MVV SECTION ---------------- */
-.mvv-section {
-  max-width: 1200px;
-  padding: 0 20px;
-  margin: 80px auto;
-}
-
+/* ---------------- GRIDS ---------------- */
+.about-icons,
+.focus-grid,
 .mvv-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -146,6 +78,9 @@
   margin-top: 40px;
 }
 
+/* ---------------- CARDS ---------------- */
+.icon-card,
+.focus-card,
 .mvv-card {
   background: var(--card-bg);
   padding: 25px;
@@ -155,17 +90,24 @@
   transition: 0.3s ease;
 }
 
+.icon-card:hover,
+.focus-card:hover,
 .mvv-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 25px rgba(0,0,0,0.12);
 }
 
+.icon,
+.focus-icon,
 .mvv-icon {
-  color: var(--secondary);
   width: 42px;
   height: 42px;
   margin-bottom: 15px;
 }
+
+.icon { color: var(--secondary); }
+.focus-icon { color: var(--primary); }
+.mvv-icon { color: var(--secondary); }
 
 .mvv-card ul {
   list-style: none;
@@ -178,7 +120,67 @@
   margin-bottom: 6px;
 }
 
-/* ---------------- RESPONSIVE ---------------- */
+/* ==================================================
+   ================= RESPONSIVE =====================
+   ================================================== */
+
+/* -------- TABLET -------- */
 @media (max-width: 900px) {
-  .hero-title { font-size: 2.2rem; }
+  .hero {
+    padding: 70px 16px;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-text {
+    font-size: 1.05rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .section-description {
+    font-size: 1rem;
+  }
+}
+
+/* -------- MOBILE -------- */
+@media (max-width: 600px) {
+  .hero {
+    padding: 60px 14px;
+  }
+
+  .hero-logo {
+    width: 110px;
+  }
+
+  .hero-title {
+    font-size: 1.9rem;
+  }
+
+  .hero-text {
+    font-size: 0.95rem;
+  }
+
+  .about-section,
+  .focus-section,
+  .mvv-section {
+    margin: 60px auto;
+  }
+
+  .icon,
+  .focus-icon,
+  .mvv-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .icon-card,
+  .focus-card,
+  .mvv-card {
+    padding: 20px;
+  }
 }
